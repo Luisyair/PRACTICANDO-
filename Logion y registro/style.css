@@ -1,0 +1,237 @@
+/* ESTILO DE LETRA  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif", serif;
+}
+
+body {
+    border: 2px solid red;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.container {
+    /* border: 1px solid black; */
+    width: 800px;
+    height: 500px;
+    display: flex;
+    position: relative;
+
+    background-color: #ffffff;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    /* para que se vea una sombra en el contenedor */
+
+
+}
+
+
+.container-form {
+    /* border: 1px solid black; */
+    width: 100%;
+    overflow: hidden;
+    /*para que no se visulice el contenido que sobresalga del coontenedor */
+
+
+}
+
+/* ESTILO PARA LOS FORMULARIOS  */
+
+.container-form form {
+    /* border: 1px solid rgb(255, 0, 0); */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+    justify-content: center;
+    align-items: center;
+
+    /* añadiremos una trasnsicion a la propiedad transform para que se vea la animacion al cambiar de formulario */
+    transition: transform 0.5s ease-in-out;
+}
+
+.container-form h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.social-networks {
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: center;
+    gap: 17px;
+    margin-bottom: 20px;
+}
+
+.social-networks ion-icon {
+    font-size: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.container-form span {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.container-inputs {
+    border: 1px solid black;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 15px;
+    background-color: #EEEEEE;
+}
+
+.container-inputs input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    /*asi quitamos el borde del input*/
+    outline: none;
+    background-color: inherit;
+    /*asi eredan el color de fondo */
+}
+
+.container-form a {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: rgb(234, 9, 9);
+    color: white;
+
+}
+
+
+/* ANIMACION DE LOS FORMULARIOS  */
+
+.sign-up {
+    /* para moverlo utilizaremos la propiedad transform */
+    transform: translateX(-100%);
+}
+
+.container.toggle .sign-in {
+    transform: translateX(100%);
+}
+
+.container.toggle .sign-up {
+    transform: translateX(0%);
+}
+
+/* welcome  */
+.container-welcome {
+    background-color: rgb(234, 9, 9);
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    transform: translateX(100%);
+
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    /*para que no se visulice el contenido que sobresalga del coontenedor */
+
+    /* agregamos la transicion para que se vea la animacion al cambiar de formulario */
+    transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+
+    /* dandole bordes al contendor */
+    border-radius: 50% 0% 0% 50%;
+
+
+}
+
+.container.toggle .container-welcome {
+    transform: translateX(0%);
+    border-radius: 0% 50% 50% 0%;
+    background-color: #000000
+}
+
+
+
+
+.container-welcome .welcome {
+    /* border: 2px solid black; */
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 0 50px;
+
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+
+    /* transicion al presionar el boton  */
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.welcome-sign-in {
+    transform: translateX(100%);
+}
+
+.welcome-welcome h2 {
+    font-size: 40px;
+}
+
+.welcome-welcome p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.container-welcome .button {
+    border: 1px solid rgb(255, 255, 255); 
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;  
+    font-size: 15px;    
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.container.toggle .welcome-sign-in {
+    transform: translateX(0%);
+}
+
+.container.toggle .welcome-sign-up {
+    transform: translateX(-100%);
+}
