@@ -1,8 +1,8 @@
 # React + Vite
 🎮 Juego de Triqui (Tic-Tac-Toe)
 Una versión interactiva y minimalista del clásico Triqui, desarrollada con React y Vite, enfocada en reforzar conceptos clave de estados y lógica condicional.
+![alt text](play.png)
 
-![alt text](play_3.png)
 
 ⚙️ Funcionalidades
 Detección automática de victorias o empate.
@@ -25,7 +25,7 @@ React
 Vite
 CSS - Tailwind.
 
-
+![alt text](play_3.png)
 ![alt text](play_2.png)
 
 
