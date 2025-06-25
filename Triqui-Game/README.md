@@ -27,6 +27,7 @@ CSS - Tailwind.
 
 
 ![alt text](play_2.png)
+![alt text](play_3.png)
 
 
 
